@@ -1,0 +1,16 @@
+{
+  "name": "23onlinequizccfa_designui",
+  "version": "1.0.0",
+  "description": "quiz",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dalin",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*"
+  }
+}

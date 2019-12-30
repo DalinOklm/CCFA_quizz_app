@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DN application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<link rel="stylesheet" href="assets/logic.css">
+   <script src="/socket.io/socket.io.js"></script>
+</head>
+
+
+<body>
+
+
+
+  <!--888888888888888888-->
+
+
+   <!--formn-->
+   <div id="brand" class="jumbotron">DN APPLICATION</div>
+    <div class="container" id="initForm">
+       <div id="enterName"class="form-group col-md-6 ">
+           <label for="usr">Name:</label>
+           <input id="userName" type="text" class="form-control col-md-12" id="usr">
+           <button id="Submitbution" type="button" class="btn btn-primary">submit</button>
+         </div>
+       </div>
+
+
+
+
+  <!--8888888-----onlinePeople------88888888888-->
+
+  <h3 id="online_people_h3"></h3>
+  <div><h1 id="profileName">Tony</h1></div>
+  <div class="container" id="onlinePeople">
+ <!-- <h3 id="online_people_h3"></h3>
+  <div class="panel-group" id="opanel">
+    <div class="panel panel-default">
+      <div id="panelHeading" class="panel-heading"></div>
+    </div>
+  </div> -->
+  <div class="userBox">
+    <div class="firstLetter"></div>
+    <button id="chat_req" class="chat_Button" class="btn">Chat</button>
+    <button id="challengeB" class="challenge_button" class="btn">Challenge</button>
+    <button id="chat_accept" class="btn btn-success">Accept</button>
+    <button id="chat_decline"  class="btn btn-danger">Decline</button>
+    <button id="challenge_accept" class="btn btn-success">Accept</button>
+    <button id="challenge_decline"  class="btn btn-danger">Decline</button>
+</div>
+</div>
+
+
+<div class="container" id="QuizCCFA" >
+
+  <audio id="beepSound">
+		<source src="assets/audio/beep.wav"></source>
+  </audio>
+
+  <audio id="pointsSound">
+		<source src="assets/audio/points.wav" type="audio/wav"></source>
+  </audio>
+
+  <audio id="wrongSound">
+		<source src="assets/audio/wrong.wav"></source>
+  </audio>
+
+  
+  <audio id="gameOver">
+		<source src="assets/audio/gameOver.wav"></source>
+  </audio>
+
+  <audio id="notification_up">
+		<source src="assets/audio/notification_up.wav"></source>
+  </audio>
+
+  
+  <audio id="messageNotice">
+		<source src="assets/audio/messageNotice.mp3"></source>
+  </audio>
+  
+  
+  <div id="score_title">Score
+      <i id="icon_coin" class="fas fa-coins fa-1x"></i> </div>
+   
+  <div id="playerScore">
+    <div class="playerScore_div" id="player_1">Logan:
+        <span id="player_1_scrore"> 0  </span>
+    </div>
+
+    <!--
+    <div class="playerScore_div"  id="player_2">Adrian:
+        <span id="player_2_scrore">75 </span>
+    </div> -->
+
+  </div>
+
+  <div id="chatinGame" class="btn">Chat</div>
+  <div id="replay" class="btn">Replay</div>
+  <div id="chooseLetter">M</div>
+  <div id="timeremaining">
+    <span id="timeremainingvalue"></span>
+  </div>
+
+<!--playerA-->
+  <div class="players" id="playerA">
+<h2 id="username">Logan</h2>
+<p>Enter name in each column starting with the given letter</p>            
+<table class="table table-bordered">
+  <thead>
+    <tr >
+      <th class="category_tab" > <i  class="fas fa-flag fa-1x icon_category"></i>Country</th>
+
+      <!-- Country -->
+      <th >
+        
+        
+        <div id="locker1"  class="feature"><i class="fas fa-lock fa-3x"></i></div>
+        <div id="country_Data" class="column_data category_data" >Congo</div>
+        <button id="edit_country" class="edit_button btn">Edit</button>
+        <div id="inco"> <i id="incorrect" class="incorrect_Icon fas fa-times-circle fa-3x"></i></div>
+        <div id="correct"> <i id="check_answer_correct" class="correct_Icon fas fa-check-circle fa-3x"></i></div>
+        <div class="used well btn-warning" id="used_button">already used</div>
+       
+
+        <div id='1countryfieldAndButtondiv' class="input-group mb-3">
+         
+            <input class="input_answer"  id='1countryInput' type="text" class="form-control" 
+            placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       <button  id="1countryconfirmButton" id="confirmButton" class="btn btn-outline-secondary" type="button">Button</button>
+         
+          </div>
+    </th>
+      
+
+    </tr>
+
+ <!-- Car -->
+    <tr>
+        <th class="category_tab" > <i class="fas fa-car icon_category "></i> Car</th>
+
+        
+        <th>
+
+            
+        <div id="locker2"  class="feature"><i class="fas fa-lock fa-3x"></i></div>
+            <div id="Car_Data" class="column_data category_data" >Ford</div>
+            <button id="edit_car" class="edit_button btn">Edit</button>
+            <div id="inco_car"> <i id="incorrect_car" class="incorrect_Icon fas fa-times-circle fa-3x"></i></div>
+            <div id="correct_car"> <i id="check_answer_correct_car" class="correct_Icon fas fa-check-circle fa-3x"></i></div>
+            <div class="used well btn-warning" id="used_button_car">already used</div>
+
+          <div id='1CarfieldAndButtondiv' class="input-group mb-3">
+            <input class="input_answer"  id='1CarInput' type="text" class="form-control" 
+              placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+             <button  id="1CarconfirmButton" id="confirmButton" class="btn btn-outline-secondary" type="button">Button</button>
+              </div>
+      </th>
+        
+
+      </tr>
+
+      <!-- Fruit -->
+      <tr>
+          <th class="category_tab" ><i class="fas fa-apple-alt icon_category "></i>Fruit</th>
+
+          
+          <th>
+              
+        <div id="locker3"  class="feature"><i class="fas fa-lock fa-3x"></i></div>
+           <div id="Fruit_Data" class="column_data category_data" >Lemon</div>
+           <button id="edit_fruit" class="edit_button btn">Edit</button>
+           <div id="inco_fruit"> <i id="incorrect_fruit" class="incorrect_Icon fas fa-times-circle fa-3x"></i></div>
+           <div id="correct_fruit"> <i id="check_answer_correct_fruit" class="correct_Icon fas fa-check-circle fa-3x"></i></div>
+           <div class="used well btn-warning" id="used_button_fruit">already used</div>
+
+
+           <div id='1FruitfieldAndButtondiv' class="input-group mb-3"> 
+              <input class="input_answer"  id='1FruitInput' type="text" class="form-control"
+              placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">        
+              <button  id="1FruitconfirmButton" id="confirmButton" class="btn btn-outline-secondary" type="button">Button</button>
+           </div>
+        </th>
+          
+
+        </tr>
+
+        <!-- Animal -->
+        <tr>
+            <th class="category_tab" ><i class="fas fa-crow icon_category "></i>Animal</th>
+
+            
+            <th>
+                
+             <div id="locker4"  class="feature"><i class="fas fa-lock fa-3x"></i></div>
+                <div id="Animal_Data" class="column_data category_data" >Lemon</div>
+                <button id="edit_Animal" class="edit_button btn">Edit</button>
+                <div id="inco_Animal"> <i id="incorrect_Animal" class="incorrect_Icon fas fa-times-circle fa-3x"></i></div>
+                <div id="correct_Animal"> <i id="check_answer_correct_Animal" class="correct_Icon fas fa-check-circle fa-3x"></i></div>
+                <div class="used well btn-warning" id="used_button_animal">already used</div>
+
+              <div id='1AnimalfieldAndButtondiv' class="input-group mb-3">
+                <input class="input_answer" id='1AnimalInput' type="text" class="form-control" 
+                  placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+     <button  id="1AnimalconfirmButton" id="confirmButton" class="btn btn-outline-secondary" type="button">Button</button>
+                 </div>
+          </th>
+            
+
+          </tr>
+
+    
+  </thead>
+  
+</table>
+</div>
+
+
+
+
+
+<!--playerB-->
+
+<div class="players" id="playerB">
+  <h2 id="receiver-name">Adrian</h2>
+  <p>Enter name in each column starting with the given letter</p>            
+  <table class="table table-bordered">
+    <thead>
+
+      <!-- Country -->
+
+        <tr >
+            <th  class="category_tab" > <i  class="fas fa-flag fa-1x icon_category"></i>Country</th>
+
+            
+            <th >
+                <div id="country_Data_receiver" class="column_data category_data" >Lemon</div>
+              <div id='1countryfieldAndButtondiv-receiver' class="input-group mb-3">
+                <input class="input_answer"  id='1countryInput-receiver' type="text" class="form-control" 
+                  placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+          </th>
+            
+
+          </tr>
+
+           <!-- Car -->
+
+          <tr>
+              <th class="category_tab" > <i class="fas fa-car icon_category "></i> Car</th>
+
+              
+              <th>
+                  <div id="Car_Data_receiver" class="column_data category_data" >Lemon</div>
+                <div id='1CarfieldAndButtondiv-receiver' class="input-group mb-3">
+                  <div id="Car_Data_receiver" class="category_data" >Lemon</div>
+                  <input class="input_answer"  id='1CarInput-receiver' type="text" class="form-control" 
+                    placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+            </th>
+              
+
+            </tr>
+
+             <!-- Fruit -->
+
+            <tr>
+                <th class="category_tab" ><i class="fas fa-apple-alt icon_category "></i>Fruit</th>
+
+                
+                <th>
+                    <div id="Fruit_Data_receiver" class="column_data category_data" >Lemon</div>
+
+                  <div id='1FruitfieldAndButtondiv-receiver' class="input-group mb-3">
+                    <input class="input_answer"  id='1FruitInput-receiver' type="text" class="form-control" 
+                      placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+              </th>
+                
+
+              </tr>
+
+
+               <!-- Animal -->
+
+              <tr>
+                  <th class="category_tab" ><i class="fas fa-crow icon_category "></i>Animal</th>
+
+                  
+                  <th>
+                    
+                      <div id="Animal_Data_receiver" class="column_data category_data" >Lemon</div>
+
+                    <div id='1AnimalfieldAndButtondiv-receiver' class="input-group mb-3">
+                      <input class="input_answer" id='1AnimalInput-receiver' type="text" class="form-control" 
+                        placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                       </div>
+                </th>
+                  
+
+                </tr>
+
+      
+    </thead>
+    
+  </table>
+</div>
+
+</div>
+
+
+<!--chat reveal-->
+<div class="container" id="chat-container">
+  <div id="homeButton" class="microButton btn">Home</div>
+  <div class="msg-header">
+      <div class="msg-header-img">
+      </div>
+      <div class="active">
+          <h4 id="profileName_chat">John Lewis</h4>
+          <h6></h6>
+      </div>
+  </div>
+ 
+  <div class="chat-page" id="chatPage">
+      <div class="msg-inbox" id="msgInbox">
+          <div class="chats" id="chats">
+              <div class="msg-page" id="msgPage">
+
+                 
+                               <!--receive grey
+                              <div class="received-chats">
+                                  <div class="received-chats-img">
+                                  </div>
+                                  <div class="received-msg" id="receivedMsg">
+                                  <div class="received-msg-inbox" id="send8">
+                                  <p></p>
+                                  <span class="time">11:01 PM | October 11</span>
+                                  </div>
+                                  </div>
+                                  </div>-->
+
+                                  
+                                      <!--send green
+                          <div class="outgoing-chats">
+                              <div class="outgoing-chats-msg" id="send4" >
+                                      <p></p>
+                                      <span class="time">11:01 PM | October 11</span>
+                              </div>
+                              <div class="outgoing-chats-img" id="send5">
+                              </div>
+                              </div>-->
+
+                           
+
+              </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="msg-bottom">
+                  <div class="input-group">
+                      <input id="inputmsg" type="text" class="form-control" placeholder="write message...">
+                      <div class="input-group-append">
+                          <span class="input-group-text"> <i id="sender" class="fa fa-paper-plane"></i></span>
+                      </div>
+                  </div>
+              </div>
+         <div class="credit">Dalin N &#9784; </div>   
+</div>
+
+
+
+
+
+<script src="assets/logic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+
+
+</body>
+</html>

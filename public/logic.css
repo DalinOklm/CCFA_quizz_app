@@ -1,0 +1,1019 @@
+body{
+
+}
+
+#brand
+{
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80%;
+    top: 20px;
+    left: -3%;
+    background-color: rgb(35, 114, 166);
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+
+
+#initForm{
+  display: block;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    top: 150px;
+    left: 0px;
+    padding: 10px;
+    background-color: rgb(0, 74, 119);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Submitbution
+{
+    margin-top: 15px;
+    background-color: rgb(34, 190, 165);
+
+     /* 
+    #Submitbution {
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    } */
+}
+
+#profileName
+{
+    display: none;
+}
+
+.userBox
+{ 
+  display: block;
+    position: relative;
+    width: 95%;
+    height: 180px;
+    top: 100px;
+    left: -17px;
+     border-radius: 20px;
+     text-align: left;
+     font-size: 20px;
+     line-height: 30px;
+     color: white;
+     padding: 25px;
+     margin: 15px;
+     background-color: rgb(0, 114, 166);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+     
+}
+
+
+
+
+.firstLetter
+{
+ position: relative;
+ width: 95px;
+ height: 95px;
+ top: -6%;
+ left: -5%;
+ border-radius: 50%;
+  margin-left: 10px;
+  background-color: rgb(0, 39, 63);
+  color: rgb(36, 190, 165);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 90px;
+}
+
+
+.chat_Button
+{
+    position: relative;
+    width: 150px;
+    height: 55px;
+    top: -100px;
+    left: 45%;
+     margin-left: 10px;
+     background-color: rgb(0, 39, 63);
+     border-style: solid;
+     border-color: rgb(0, 39, 63);
+     color: white;
+     
+}
+
+
+.challenge_button
+{
+    position: relative;
+    width: 150px;
+    height: 55px;
+    top: -72px;
+    left: 45%;
+    background-color: rgb(0, 39, 63);
+    border-style: solid;
+    border-color: rgb(0, 39, 63);
+    color: white;
+     margin-left: 10px;
+}
+
+
+
+#online_people_h3
+{
+    display: none;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    top: 80px;
+    left: -3%;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+
+
+#chat_accept
+{
+    display: none;
+    position: relative;
+    top: -80px;
+    left: 47%;
+}
+
+#chat_decline
+{
+    display: none;
+    position: relative;
+    top: -115px;
+    left: 78%;
+}
+
+#challenge_accept
+{
+    position: relative;
+    top: -70px;
+    left: 36%;
+}
+
+#challenge_reject
+{
+    position: relative;
+    top: -70px;
+    left: 34%;
+    
+}
+
+#busy_person
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+#onlinePeople {
+    display: none;
+    width: 150px;
+    }
+    
+    #opanel{
+    width: 220%;
+    }
+    
+    
+    #QuizCCFA {
+      display: none;
+    }
+    
+    form {
+      border: 3px solid #f1f1f1;
+    }
+    
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+   
+     
+    
+    /* Add a hover effect for buttons */
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Extra style for the cancel button (red) */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    
+    /* Avatar image */
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The "Forgot password" text */
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+    
+    
+    #country
+    {
+      width: 160px;
+    }
+    
+    #score{
+      widows: 500px;
+        color: blue;
+        top: 160px;
+        padding: 10px;
+        font-size: 40px;
+        position: absolute;
+        left: 880px;
+    }
+    
+    .btn-outline-secondary
+    {
+      margin-top: 10px;
+    }
+    
+    #opponentTable
+    {
+      
+    }
+    
+    .well
+    {
+      text-align: center;
+    }
+    
+    .feature svg.svg-inline--fa {
+      color: grey;
+    }
+    
+    .feature{
+      position: relative;
+      height: 0px;
+      width: 0px;
+      text-align: center;
+      top: -9px;
+      left: 40px;
+      margin: 5px;
+      margin-bottom: 30px;
+    }
+    
+    #locker1{
+      
+      display: none;
+    
+    }
+    
+    #locker2{
+      
+      display: none;
+    
+    }
+    
+    #locker3{
+      
+      display: none;
+    
+    }
+    
+    
+    #locker4{
+    
+      display: none;
+    
+    }
+    
+    
+    #instruction
+    {
+    
+    }
+    
+    #username
+    {
+      margin-top: 30px;
+    }
+    
+    #timeremaining
+    {
+      width: 40%;
+      position: relative;
+      left: 780px;
+      top: 20px;
+      font-size: 35px;
+    }
+    
+    #onlinePeople
+    {
+    width: 320px;
+    }
+    
+
+    .input_answer
+    {
+        width: 40%;
+        color:black;
+        font-size: 27px;
+    }
+   
+    .players
+    {
+       margin-top: 50px;
+    }
+   
+    #playerA
+    {
+       margin-top: -60px;
+    }
+   
+    /*Phone*/
+    #timeremaining
+    {
+        position: relative;
+        height: 60px;
+        width: 60px;
+        left: 73%;
+        top: -30px;
+        border-style: solid; 
+        border-color:  rgb(0, 74, 119);
+        border-radius: 50%;
+        text-align: center;
+        font-size: 19px;
+        line-height: 310%;
+        color: white;
+        background-color: rgb(35, 114, 166);
+    }
+   
+   
+   
+   
+    #chooseLetter
+    {
+       position: relative;
+       height: 80px;
+       width: 80px;
+       left: 6%;
+       top: -80px;
+       /* border-style: solid; */
+       border-color:  rgb(0, 74, 119);
+       border-radius: 50%;
+       text-align: center;
+       font-size: 33px;
+       line-height: 230%;
+       color: white;
+       background-color: rgb(35, 114, 166);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    }
+
+
+    .microButton
+    {
+       position: relative;
+       height: 40px;
+       width: 90px;
+       left: 6%;
+       top: -12px;
+       text-align: center;
+       font-size: 22px;
+       line-height: 150%;
+       color: white;
+       background-color: rgb(34, 190, 165);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    }
+
+    
+    #chatinGame
+    {
+      display: none;
+       position: relative;
+       height: 40px;
+       width: 90px;
+       left: 6%;
+       top: 130px;
+       text-align: center;
+       font-size: 22px;
+       line-height: 150%;
+       color: white;
+       background-color: rgb(34, 190, 165);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    }
+
+
+
+    
+    #replay
+    {
+      display: none;
+       position: relative;
+       height: 40px;
+       width: 90px;
+       left: 35%;
+       top: 90px;
+       text-align: center;
+       font-size: 22px;
+       line-height: 150%;
+       color: white;
+       background-color: rgb(63, 168, 71);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    }
+
+   
+    #playerScore
+    {
+        position: relative;
+        height: 80px;
+        width: 130px;
+        max-width: 120px;
+        max-height: 70px;
+        left: 53%;
+        top: 30px;
+        border-style: solid;
+        border-color:  rgb(0, 74, 119);
+        border-radius: 10px;
+        overflow: scroll;
+        padding-left: 15px;
+        border-style: solid;
+        border-color:  rgb(0, 114, 166);
+    }
+   
+   
+   .playerScore_div
+   {
+       width: 80%;
+       background-color: rgb(0, 74, 119);
+       margin: 5px;
+       color: white;
+   } 
+   
+   #score_title
+   {
+       position: relative;
+       left: 60%;
+       top: 25px;
+   }
+   
+   #icon_coin
+   {
+       color: rgb(247, 221, 75)
+   }
+   
+  
+   .country_tab
+   {
+       width: 105px;
+   }
+   
+   
+   
+   .country_tab
+   {
+       width: 250px;
+       font-size: 35px;
+   }
+   
+   .category_tab
+   {
+       width: 100px;
+       font-size: 15px;
+   }
+   
+   
+   .category_data
+   {
+       display: none;
+       position: relative;
+       top: 13px;
+       left: 20px;
+       font-size: 19px;
+       margin-top: -15px;
+       margin-bottom: -5px;
+   }
+   
+   
+   .icon_category
+   {
+       margin-right: 5px;
+   }
+   
+   
+   .edit_button
+   {
+       position: relative;
+       left: 20px;
+       top: -5px;
+        height: 26px;
+       width: 45px;
+       margin: 0px;
+       text-align: center;
+       line-height: 10px;
+       border-radius: 10px;
+       background-color: #00ADB5;
+   }
+   
+   .column_data{
+    position: relative;
+    top: 3px;
+    margin: 10px;
+    font-size: 27px;
+   }
+
+   
+
+.edit_button
+{
+  display: none;
+  position: relative;
+  top: -3px;
+  left: 30px;
+  border-radius: 2px;
+  width: 60px;
+  color: white;
+}
+  
+   
+   /*phone*/
+   .correct_Icon
+   {
+    position: relative;
+       left: 180px;
+       top: -50px;
+       color: rgb(63, 168, 71);
+       margin-top: -5px;
+       margin-bottom: -5px;
+   }
+   
+   
+   .incorrect_Icon
+   {
+       position: relative;
+       left: 180px;
+       top: -50px;
+       color: rgb(185, 29, 44);
+       margin-top: -5px;
+       margin-bottom: -5px;
+   }
+
+   .used
+   {
+     height: 50px;
+     width: 90px;
+    position: relative;
+    left: 135px;
+    top: -11px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(34, 190, 165);
+    line-height: 12px;
+   }
+
+  #inco
+  {
+    display: none;
+  }
+
+  #correct
+  {
+    display: none;
+  }
+
+  #used_button
+  {
+    display: none;
+  }
+
+  
+  #used_button_car
+  {
+    display: none;
+  }
+
+  #used_button_fruit
+  {
+    display: none;
+  }
+
+  #used_button_animal
+  {
+    display: none;
+  }
+
+  
+  #inco_car
+  {
+    display: none;
+  }
+
+  #correct_car
+  {
+    display: none;
+  }
+
+  
+  
+  #inco_fruit
+  {
+    display: none;
+  }
+
+  #correct_fruit
+  {
+    display: none;
+  }
+
+
+  #inco_Animal
+  {
+    display: none;
+  }
+
+  #correct_Animal
+  {
+    display: none;
+  }
+
+   
+   
+   table
+   {
+       /*background-color: rgb(0, 74, 119);*/
+       border-style: solid;
+       border-color: #393e46;
+       background-color: #eeeeee;
+   }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#initNamespace
+{
+display: none
+}
+#title
+{
+    position: absolute;
+    top: 30px;
+    left: 340px;
+}
+    .categoty :hover
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #Gucci
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 50px;
+        cursor: pointer;
+    }
+    #Prada
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 510px;
+        cursor: pointer;
+    }
+    #Calvin
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 950px;
+        cursor: pointer;
+    }
+
+.chat-revealed
+{
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    display: block;
+}
+.chat-revealed:hover
+{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+.jumbotron
+{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+#bution
+{
+  margin-top: 20px;
+}
+
+#usr
+{
+   
+}
+
+#chat-container{
+    max-width: 450px !important;
+    margin: auto;
+    margin-top: 4%;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    display: none;
+}
+
+.containerShadow{
+    width: 850px;
+    height: 616;
+    border-style: solid;
+    border: red;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+}
+
+img{
+    max-width: 100%;
+    border-radius: 60%;
+}
+.msg-header{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 10%;
+    border-bottom: none;
+    display: inline-block;
+    background-color:rgb(0, 74, 119);
+}
+.msg-header-img
+{
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 5%;
+    margin-top: 12px;
+    float: left;
+}
+.active
+{
+    width: 120px;
+    float: left;
+    margin-top: 10px;
+}
+.active h4
+{
+font-size: 20px;
+margin-left: 10px;
+color: #fff;
+}
+.active h6
+{
+font-size: 10px;
+margin-left: 10px;
+line-height: 2px;
+color: #fff;
+}
+.header-icons
+{
+    width: 120px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.header-icons .fa
+{
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.chats
+{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 30px;
+    padding-bottom: 0%;
+}
+.msg-page
+{
+    height: 316px;
+    overflow-y: auto;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-bottom: #777;
+}
+.received-chats-img
+{
+    display: inline-block;
+    width: 20px;
+    float: left;
+}
+.received-msg
+{
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+.received-msg-inbox
+{
+    width: 57%;
+}
+.received-msg-inbox p
+{
+    background: #efefef none repeat scroll 0 0;
+    border-radius: 0px 20px 20px 20px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+#sender 
+{
+  position: absolute;
+  top: 21px;
+  margin-left: 7px;
+}
+
+#inputmsg 
+{
+  width: 93%;
+}
+
+.time
+{
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+.credit
+{
+    color: #777;
+    display: block;
+    font-size: 17px;
+    margin: 8px 0 10px 10px;
+    float: right;
+    width: 30%;
+}
+#creditIcon
+{
+    color: red;
+}
+.outgoing-chats
+{
+    overflow: hidden;
+    margin: 26px 20px;
+}
+.outgoing-chats-msg p
+{
+    background: rgb(0, 74, 119); none repeat scroll 0 0;
+    color: #fff;
+    border-radius: 20px 0px 20px 20px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+.outgoing-chats-msg
+{
+    float: left;
+    width: 46%;
+    margin-left: 45%;
+}
+.outgoing-chats-img
+{
+    display: inline-block;
+    width: 20px;
+    float: right;
+}
+.msg-bottom
+{
+position: relative;
+height: 70px;
+width: 100%;
+border-radius: 20px 20px 20px 20px;
+background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottom-icons .fa 
+{
+  color: #fff;
+  padding: 5px;
+}
+.fa-paper-plane
+{
+    color: #777;
+}
+.fa-paper-plane:hover
+{
+    color: #777;
+background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-group
+{
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+    outline: none !important;
+    border-radius: 20px;
+    width: 90% !important;
+    max-width: 90%;
+    overflow: auto;
+}
+.form-control
+{
+    border: none !important;
+    border-radius: 20px !important;
+}
+.input-group-text
+{
+    background: transparent !important;
+    border: none !important;
+}

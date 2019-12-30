@@ -1,0 +1,280 @@
+
+#initNamespace
+{
+display: none
+}
+#title
+{
+    position: absolute;
+    top: 30px;
+    left: 340px;
+}
+    .categoty :hover
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #Gucci
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 50px;
+        cursor: pointer;
+    }
+    #Prada
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 510px;
+        cursor: pointer;
+    }
+    #Calvin
+    {
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: 950px;
+        cursor: pointer;
+    }
+
+.chat-revealed
+{
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    display: block;
+}
+.chat-revealed:hover
+{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#initForm
+{
+    display: none;
+}
+
+.jumbotron
+{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+#bution
+{
+  margin-top: 20px;
+}
+
+#usr
+{
+   
+}
+
+#chat-container{
+    max-width: 450px !important;
+    margin: auto;
+    margin-top: 4%;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    display: none;
+}
+
+.containerShadow{
+    width: 850px;
+    height: 616;
+    border-style: solid;
+    border: red;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+}
+
+img{
+    max-width: 100%;
+    border-radius: 60%;
+}
+.msg-header{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 10%;
+    border-bottom: none;
+    display: inline-block;
+    background-color:rgb(44,191,100)
+}
+.msg-header-img
+{
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 5%;
+    margin-top: 12px;
+    float: left;
+}
+.active
+{
+    width: 120px;
+    float: left;
+    margin-top: 10px;
+}
+.active h4
+{
+font-size: 20px;
+margin-left: 10px;
+color: #fff;
+}
+.active h6
+{
+font-size: 10px;
+margin-left: 10px;
+line-height: 2px;
+color: #fff;
+}
+.header-icons
+{
+    width: 120px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.header-icons .fa
+{
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.chats
+{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 30px;
+    padding-bottom: 0%;
+}
+.msg-page
+{
+    height: 316px;
+    overflow-y: auto;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-bottom: #777;
+}
+.received-chats-img
+{
+    display: inline-block;
+    width: 20px;
+    float: left;
+}
+.received-msg
+{
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+.received-msg-inbox
+{
+    width: 57%;
+}
+.received-msg-inbox p
+{
+    background: #efefef none repeat scroll 0 0;
+    border-radius: 0px 20px 20px 20px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+.time
+{
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+.credit
+{
+    position: relative;
+    left: 60%;
+    color: #777;
+    display: block;
+    font-size: 17px;
+    margin: 8px 0 10px 10px;
+    float: right;
+    width: 240px;
+}
+#creditIcon
+{
+    color: red;
+}
+.outgoing-chats
+{
+    overflow: hidden;
+    margin: 26px 20px;
+}
+.outgoing-chats-msg p
+{
+    background: rgb(44,191,100) none repeat scroll 0 0;
+    color: #fff;
+    border-radius: 20px 0px 20px 20px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+.outgoing-chats-msg
+{
+    float: left;
+    width: 46%;
+    margin-left: 45%;
+}
+.outgoing-chats-img
+{
+    display: inline-block;
+    width: 20px;
+    float: right;
+}
+.msg-bottom
+{
+position: relative;
+height: 70px;
+width: 100%;
+border-radius: 20px 20px 20px 20px;
+background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottom-icons .fa 
+{
+  color: #fff;
+  padding: 5px;
+}
+.fa-paper-plane
+{
+    color: #777;
+}
+.fa-paper-plane:hover
+{
+    color: #777;
+background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-group
+{
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+    outline: none !important;
+    border-radius: 20px;
+    width: 90% !important;
+}
+.form-control
+{
+    border: none !important;
+    border-radius: 20px !important;
+}
+.input-group-text
+{
+    background: transparent !important;
+    border: none !important;
+}

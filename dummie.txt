@@ -1,0 +1,84 @@
+tony
+luc
+logan 
+Messi
+Antione
+Frendie
+Ansu
+Luis
+Ousmane
+Arturo
+Carles
+emmanual
+rob
+stefan
+dalin
+nike
+
+
+
+
+
+
+Lorem ipsum dolor sit amet.5
+
+          only Gucci Lorem ipsum dolor sit, amet 
+       consectetur adipisicing elit.
+                 Autem, porro?10
+
+        only Prada Lorem ipsum dolor sit, amet 
+       consectetur adipisicing elit.
+                 Autem, porro?10
+
+         Lorem ipsum dolor sit, amet 
+        consectetur adipisicing elit. 
+        Neque praesentium beatae saepe 
+        eius. Ipsam, beatae.15
+
+      Lorem ipsum dolor sit amet consectetur 
+     adipisicing elit. Commodi tempora a earum 
+     voluptates odio magni! Dolore commodi maxime 
+       illum odit.20
+
+      Lorem ipsum dolor sit amet consectetur 
+     adipisicing elit. Quasi dolor in deserunt 
+      consectetur odit qui ipsum commodi fugit 
+     perferendis nostrum totam asperiores 
+     dignissimos quidem illo provident fugiat, 
+     ratione ad distinctio!30
+
+     Lorem, ipsum dolor sit amet consectetur 
+     adipisicing elit. Architecto quae asperiores 
+     ea. Necessitatibus iusto eveniet nulla unde 
+     eum dicta, sed vel aspernatur fuga aperiam 
+     nesciunt. Sed labore architecto quae at 
+     numquam asperiores? Deleniti ratione molestiae 
+      distinctio, facere saepe aperiam aspernatur.40
+
+
+      Lorem, ipsum dolor sit amet consectetur 
+     adipisicing elit. Architecto quae asperiores 
+     ea. Necessitatibus iusto eveniet nulla unde 
+     eum dicta, sed vel aspernatur fuga aperiam 
+     nesciunt. Sed labore architecto quae at 
+     numquam asperiores? Deleniti ratione molestiae 
+      distinctio, facere saepe aperiam aspernatur
+      Lorem, ipsum dolor sit amet consectetur 
+     adipisicing elit. Architecto quae asperiores 
+     ea. Necessitatibus iusto eveniet nulla unde 
+     eum dicta, sed vel aspernatur fuga aperiam 
+     nesciunt. Sed labore architecto quae at 
+     numquam asperiores? Deleniti ratione molestiae 
+      distinctio, facere saepe aperiam aspernatur. 80
+
+
+
+       console.log("wrong:"+wrong)
+                
+               if (wrong) {
+                 document.getElementById("wrongSound").play(); console.log("wrong sound")
+               }else {
+                 console.log("there was no repeat")   
+                 document.getElementById("pointsSound").play();
+                 console.log("right sound")
+               }
